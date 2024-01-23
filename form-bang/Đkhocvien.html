@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 300px;
+            height: 250px;
+            background-color: yellowgreen;
+            padding: 2px 2px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .a{
+            text-align: center;
+        }
+        .b{
+            color: blue;
+
+        }
+
+    </style>
+</head>
+<body>
+<form>
+
+<table>
+    <tr>
+    <td style="background:aqua" colspan="2"><h2 class="a"> ĐĂNG KÍ HỌC VIÊN</h2></td>
+    </tr>
+    <tr>
+        <Td><label for="name" class="b"> Họ và tên</label></Td>
+        <Td colspan="2"><input type="text" id="name"></Td>
+    </tr>
+    <tr>
+        <Td><label for="birth" class="b">Ngày sinh</label></Td>
+        <Td><input type="date" id="birth"></Td>
+    </tr>
+    <tr>
+        <Td><label class="b">Giới tính</label></Td>
+        <Td><label><input type="radio" name="gender" size="20px"> Nam</label>
+            <label><input type="radio" name="gender" size="20px">Nữ</label></Td>
+    </tr>
+    <tr>
+        <Td><label for="adress" class="b"> Địa chỉ</label></Td>
+        <Td colspan="2"><input type="text" id="adress"></Td>
+    </tr>
+    <tr>
+        <Td><label for="class" class="b"> Lớp</label></Td>
+        <Td colspan="2"><select name="lop" id="class" >
+            <option>-- chọn lớp--</option>
+            <option> lớp A</option>
+            <option> lớp B</option>
+            <option> lớp C</option>
+        </select></Td>
+    </tr>
+    <tr>
+        <Td><label for="email" class="b">Email:</label> </Td>
+        <Td colspan="2"><input type="text" id="email"></Td>
+    </tr>
+    <tr>
+        <Td><label for="phone"  class="b">Điện thoại </label></Td>
+        <Td colspan="2"><input type="number" id="phone"></Td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="3"><button type = "button" name="Submit form" > Đăng kí</button>
+        <button type = "button" name="reset form"> Nhập lại</button>
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
