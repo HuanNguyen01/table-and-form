@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="number" id="1" placeholder="nhập vào"></label>
+<button onclick="tron()"> Đây nek</button>
+<p id="tron"> </p>
+</body>
+<script>
+    function tron() {
+        const pi = 3.1416
+        let r = +document.getElementById('1').value
+        let Ctron =pi*r*2
+        document.getElementById('tron').innerHTML = "chu vi hình tròn:" + Ctron
+    }
+</script>
+</html>

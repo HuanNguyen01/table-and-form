@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="number" id="c" placeholder="Độ C"></label>
+<button onclick="Doi()">Nhập vào</button>
+<p id="r"></p>
+</body>
+<script>
+function Doi() {
+    let nhietdo = +document.getElementById('c').value
+    let nhietdoF = (9 * nhietdo / 5) + 32
+    document.getElementById('r').innerHTML= +nhietdoF
+}
+</script>
+</html>
