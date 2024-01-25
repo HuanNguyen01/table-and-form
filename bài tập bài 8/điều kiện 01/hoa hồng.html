@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+        let D= prompt('Doanh số bán hàng (DVT:triệu đồng)')
+        // giả sử doanh số bán hàng trên 10 triệu đồng thì là 5% hoa hồng
+        // giả sử doanh số bán hàng trên 20 triệu đồng thì là 10% hoa hồng
+        // giả sử doanh số bán hàng trên 40 triệu đồng thì là 25% hoa hồng
+
+        if(D>=40) {
+        document.write('Hoa hồng nhận được là (DVT:triệu đồng): '+D* 0.25)
+    } else if (D>=20){
+        document.write('Hoa hồng nhận được là (DVT:triệu đồng): '+D* 0.1)
+    } else if (D>=10){
+        document.write('Hoa hồng nhận được là (DVT:triệu đồng): '+D* 0.05)
+    } else {
+        document.write('Hoa hồng nhận được là (DVT:triệu đồng):'+D* 0)
+    }
+</script>
+</html>

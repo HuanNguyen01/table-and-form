@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let D= prompt(" thời gian gọi")
+    // giả sử thời gian cuộc gọi 10 phút đầu là 1500
+    // giả sử thời gian cuộc gọi từ phút thứ 10 đến phút thứ 20 là 1200
+    // giả sử thời gian cuộc gọi từ phút thứ 20 đến phút thứ 40 là 1000
+    // giả sử thời gian cuộc gọi trên phút thứ 40 là 750
+    if(D>=40) {
+        document.write('Cước phí là (DVT: đồng): '+D* 750)
+    } else if (D>=20){
+        document.write('Cước phí là (DVT: đồng): '+D* 1000)
+    } else if (D>=10){
+        document.write('Cước phí là (DVT: đồng): '+D* 1200)
+    } else {
+        document.write('Cước phí là (DVT:đồng):'+D* 1500)
+    }
+</script>
+</html>

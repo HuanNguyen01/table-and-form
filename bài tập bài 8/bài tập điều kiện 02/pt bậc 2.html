@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let A=prompt('pt ax^2+bx+c=o thì số a là:')
+    let B=prompt('pt ax^2+bx+c=o thì số b là:')
+    let C=prompt('pt ax^2+bx+c=o thì số c là:')
+    let Delta= B * B- 4 * A * C
+    if (Delta < 0){
+        document.write('Phương trình vô nghiệm')
+    }else {
+        let x1=(-B+ Math.sqrt(Delta))/(2*A)
+        let x2=(-B- Math.sqrt(Delta))/(2*A)
+        document.write('x1 là: '+ x1 +' ;x2 là: '+x2)
+    }
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+    <script>
+        let A = prompt('Thu nhập cá nhân (DVT: triệu đồng)')
+        /*Bậc 1 (0 - 20 triệu đồng):  Thuế 5%
+        Bậc 2 (20 - 30 triệu đồng):  Thuế 10%
+        Bậc 3 (>30 triệu đồng):  Thuế 20%*/
+        if (A > 30) {
+            let B = 20 * 0.05 + 30 * 0.1 + (A - 30) * 0.2
+            document.write('Thuế phải nộp là: ' + B +' triệu đồng')
+        } else if (A > 20) {
+            let C = 20*0.05 + (A - 20) * 0.1
+            document.write('Thuế phải nộp là: ' + C+' triệu đồng')
+        } else {
+            let D = A * 0.05
+            document.write('Thuế phải nộp là: ' + D+' triệu đồng')
+        }
+    </script>
+</html>

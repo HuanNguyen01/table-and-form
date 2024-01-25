@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let A=prompt('số thứ 1 là:')
+    let B=prompt('số thứ 2là:')
+    let C=prompt('số thứ 3 là:')
+    if (A>0 && B>0 && C>0){
+        if (A+B>C){
+            document.write(+A,+B,+C + ' là cạnh của 1 hình tam giác')
+        }else if (B+C>A){
+            document.write(+A,+B,+C+ ' là cạnh của 1 hình tam giác')
+        }else if (A+C>B){
+            document.write(+A,+B,+C+ ' là cạnh của 1 hình tam giác')
+        }else{
+            document.write(+A,+B,+C+ ' không phải là cạnh của 1 hình tam giác')
+        }
+    }else {
+        document.write(+A,+B,+C+ 'không phải là cạnh của 1 hình tam giác')
+    }
+</script>
+</html>

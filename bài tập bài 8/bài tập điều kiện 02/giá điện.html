@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let A= prompt('chỉ số điện')
+    /*Bậc 1 (0 - 100 kWh): 1000 VND/kWh
+    Bậc 2 (101 - 200 kWh): 1500 VND/kWh
+    Bậc 3 (>200 kWh): 2000 VND/kWh*/
+    if(A>200){
+        let B= 1000*100 +100*1500 + (A-200)*2000
+        document.write('tiền điện là: '+B)
+    }else if (A>100){
+        let C= 1000*100 +(A-100)*1500
+        document.write('tiền điện là: '+C)
+    }else {
+        let D= A*1000
+        document.write('tiền điện là: '+D)
+    }
+</script>
+</html>
