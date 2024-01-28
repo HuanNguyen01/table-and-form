@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let A = parseInt(prompt('Ghi năm zô  nào '))
+    if(A % 4==0 ){
+        if(A%100==0){
+            if (A % 400==0){
+                alert(A + 'là năm nhuân')
+            }else {
+                alert(A + 'không phải là năm nhuận')
+            }
+        }else{
+            alert(A + 'là năm nhuân')
+        }
+    }else{
+        alert(A +' không là năm nhuân')
+    }
+
+</script>
+</html>
