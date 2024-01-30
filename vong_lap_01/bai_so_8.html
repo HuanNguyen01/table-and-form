@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="choi()"> bắt đầu</button>
+</body>
+<script>
+    function choi() {
+        let a = +prompt('nhập số từ 0- số bạn cần nhập')
+        let b = Math.floor(Math.random() * a)
+        console.log(b)
+        let count = 1
+
+        do {
+            let c = +prompt(' Bạn đoán số bao nhiêu')
+            if (c < b && count !== 3) {
+                alert("Bạn đoán số nhỏ quá, hãy tăng lên!")
+            } else if (c > b && count !== 3) {
+                alert("Bạn đoán số lớn quá, hãy giảm xuống!")
+            } else if (c === b) {
+                alert("Bạn đã đoán đúng, xin chúc mừng!")
+                break;
+            }
+            count++;
+        } while (count < 4)
+        if (count === 4) {
+            alert("Bạn đã thua!")
+        }
+    }
+</script>
+</html>
