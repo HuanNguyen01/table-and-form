@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    table{
+      margin-left: 350px;
+      margin-top: 200px;
+    }
+  </style>
+</head>
+<body>
+<table>
+  <tr>
+    <td colspan="2"><h1> Do you love me?</h1></td>
+  </tr>
+  <tr>
+    <td><button onclick="you()" id="yes"  style="position: absolute">Yes</button></td>
+    <td><button onmouseover="a()" id="no" style="position: absolute"> No</button></td>
+  </tr>
+</table><br>
+
+</body>
+<script>
+    function you(){
+      // alert('oh year, me too')
+      let a1 =Math.random()*window.innerWidth
+      let b1=Math.random()*window.innerHeight
+      document.getElementById('yes').style.left= a1+'px'
+      document.getElementById('yes').style.top= b1+'px'
+      }
+
+    function a(){
+  let x=Math.random()*window.innerWidth
+  let y=Math.random()*window.innerHeight
+      document.getElementById('no').style.left= x+'px'
+      document.getElementById('no').style.top= y+'px'
+    }
+
+</script>
+</html>
