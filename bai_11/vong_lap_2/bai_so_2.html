@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+     let number = +prompt('nhập số vào')
+    let tich = 1
+     while ( number !== 0 ) {
+         if (number > 0) {
+             for (let i = 1; i <= number; i++) {
+                 tich = tich * i;
+             }
+             document.write(tich);
+             break;
+         } else {
+             alert('Không phải là số nguyên dương')
+             number = +prompt('nhập lại số')
+         }
+     }
+</script>
+</html>
