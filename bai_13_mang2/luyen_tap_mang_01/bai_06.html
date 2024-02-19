@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let x = +prompt( " độ dài mảng")
+    let arr = Array()
+    for (let i = 0; i < x; i++){
+        arr[i]= +prompt('nhập các giá trị của mảng')
+    }
+    let V = +prompt('nhập số đoán vào')
+    let count = 0
+    for (let i = 0; i < arr.length; i++){
+        if (V === arr[i]){
+           count++;
+        }
+    }
+    if (count > 0){
+        document.write("V is in the array")
+    }else{
+        document.write("V is not in the array")
+    }
+</script>
+</html>

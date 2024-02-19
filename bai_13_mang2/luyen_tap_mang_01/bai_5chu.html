@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let ar = ['u','e','o','a','i']
+    let x = prompt('nhập chuỗi vào đây: ')
+    let arr1 = x.split('')
+    let count = 0
+    for (let i = 0; i < ar.length ; i++){
+        for (let j = 0; j < arr1.length; j++){
+            if (ar[i] === arr1[j]){
+                count++;
+            }
+        }
+    }
+    if (count >0 ){
+        document.write('số nguyên âm trong chuỗi là: ' +count)
+    }else {
+        document.write(' Trong chuỗi không có nguyên âm ')
+    }
+</script>
+</html>

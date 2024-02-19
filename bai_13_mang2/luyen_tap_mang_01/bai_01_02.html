@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let tong = 0
+    let arr = [23,34,5,6,7,54,78,10,4,1]
+    console.log(arr.length)
+    //bài 1
+    for (let i=0 ; i < arr.length ; i++){
+        if ( arr[i] >= 10){
+            document.write(arr[i] + '<br>');
+            tong++
+        }
+
+    }
+    document.write('số lượng số lớn hơn 10 là: ' +tong)
+
+    //bài 2
+    let max = 0
+    for (let i = 0; i< arr.length ; i++){
+        if ( arr[i] >= max){
+            max = arr[i]
+        }
+    }
+    document.write(' số lớn nhất  là: ' +max )
+
+    for (let i = 0; i< arr.length ; i++) {
+        if (arr[i] === max) {
+            document.write(' ở vị trí: ' + i);
+        }
+    }
+
+
+</script>
+</html>
